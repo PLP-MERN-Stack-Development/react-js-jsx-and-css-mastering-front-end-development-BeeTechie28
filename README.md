@@ -62,7 +62,7 @@ my-react-app/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+https://github.com/PLP-MERN-Stack-Development/react-js-jsx-and-css-mastering-front-end-development-BeeTechie28.git
 
 
 2. Navigate to the project folder
