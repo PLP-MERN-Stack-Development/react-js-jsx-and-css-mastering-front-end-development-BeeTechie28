@@ -1,0 +1,182 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f3f4f6; /* light gray */
+  color: #111827; /* dark text */
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2563eb; /* blue */
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1e293b; /* dark blue */
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Buttons */
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.button-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: #1e40af;
+}
+
+.button-secondary {
+  background-color: #f3f4f6;
+  color: #111827;
+  border: 1px solid #d1d5db;
+}
+
+.button-secondary:hover {
+  background-color: #e5e7eb;
+}
+
+.button-danger {
+  background-color: #ef4444;
+  color: white;
+}
+
+.button-danger:hover {
+  background-color: #b91c1c;
+}
+
+/* Card */
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* Task Manager */
+.task-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #e5e7eb;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+/* Forms */
+input, select, textarea {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #d1d5db;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Responsive Grid for API page */
+.api-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* API Card */
+.api-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Layout container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Buttons layout for TaskManager */
+.task-actions button {
+  margin-left: 0.5rem;
+}
+
+/* Dark mode simulation */
+body.dark-mode {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+body.dark-mode .navbar {
+  background-color: #1f2937;
+}
+
+body.dark-mode .footer {
+  background-color: #111827;
+}
+
+body.dark-mode .card, body.dark-mode .api-card, body.dark-mode .task-list li {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
